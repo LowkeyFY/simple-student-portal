@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="profile-card">
+                <div class="profile-avatar"></div>
+                <h3 id="profileName"></h3>
+                <p>Student</p>
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="dashboard.html" data-page="dashboard">Dashboard</a></li>
+                <li><a href="my-courses.html" data-page="my-courses">My Courses</a></li>
+                <li><a href="grades.html" data-page="grades">Grades</a></li>
+                <li><a href="announcements.html" data-page="announcements">Announcements</a></li>
+            </ul>
+            <button id="logoutButton" class="logout-button">Logout</button>
+        </nav>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1>My Grades</h1>
+            </header>
+
+            <section class="dashboard-widgets">
+                <div class="widget grades-widget">
+                    <h4>Current Grades & Attendance</h4>
+                    <table id="gradesTable">
+                        <thead>
+                            <tr>
+                                <th>Course</th>
+                                <th>Grade</th>
+                                <th>Attendance</th>
+                                <th>Units</th> </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

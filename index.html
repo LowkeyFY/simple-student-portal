@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-container">
+            <div class="login-header">
+                <a href="#" class="logo-link">
+                    <img src="https://i.ibb.co/4536m4f/Black-and-Red-Simple-Graphic-Design-Logo.png" alt="Student Portal Logo" class="portal-logo">
+                </a>
+                <h2>Welcome to Your Portal</h2>
+                <p>Please select your role and log in.</p>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group password-group">
+                    <label for="password">Password:</label>
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" placeholder="For students: Matric No. (e.g., 23cm109)" required>
+                        <span class="toggle-password">
+                            <i class="fas fa-eye-slash"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="input-group role-selection">
+                    <label>Login As:</label>
+                    <div>
+                        <input type="radio" id="roleStudent" name="role" value="student" checked>
+                        <label for="roleStudent">Student</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="roleAdmin" name="role" value="admin">
+                        <label for="roleAdmin">Admin</label>
+                    </div>
+                </div>
+                <button type="submit">Login</button>
+                <p id="error-message" class="error-message"></p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
